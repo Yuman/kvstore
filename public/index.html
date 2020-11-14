@@ -2,11 +2,24 @@
 <html>
 <head>
 <title>mini URL</title>
+
 </head>
 <body>
 
 <h1>Want a mini URL?</h1>
-<p>This is the place.</p>
+<p>You came to the right place.</p>
+<p align="center">
+    <form action="/create" method="get" name="f" id="f" class="create-form">
+    <b>Enter a long URL to make mini:</b><br />
+    <input type="hidden" id="source" name="source" value="index">
+    <input type="text" id="url" name="url" value="">
+    <input type="submit" value="Make miniURL!">
+    <hr>Custom alias (optional):<br />
+    <tt class="basecontent">/</tt>
+    <input type="text" id="alias" name="alias"  value="" maxlength="30"><br />
+    <small>May contain letters, numbers, and dashes.</small>
+</form>
+</p>
 
 </body>
 </html>
